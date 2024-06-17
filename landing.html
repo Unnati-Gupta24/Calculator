@@ -1,0 +1,57 @@
+<!doctype html>
+<head>
+    <title>
+        CALCULATOR
+    </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <div class="lio">
+        <h1>CALCULATOR</h1></div>
+        <div class="container">
+        <div class="calculator">
+            <input type="text" placeholder="0" id="display">
+
+            <div>
+                <button class="button operator" value="Ac"  onclick="display.value = '' ">Ac</button>
+                <button class="button operator" value="Del"  onclick="display.value = display.value.toString().slice(0,-1)">Del</button>
+                <button class="button operator" value="%"  onclick="display.value += '%' ">%</button>
+                <button class="button operator" value="/" onclick="display.value += '/' ">/</button>
+            </div>
+
+            <div>
+                <button class="button" value="7" onclick="display.value += '7' ">7</button>
+                <button class="button" value="8" onclick="display.value += '8' ">8</button>
+                <button class="button" value="9" onclick="display.value += '9' ">9</button>
+                <button class="button operator" value="*" onclick="display.value += '*' ">*</button>
+            </div>
+
+            <div>
+                <button class="button" value="4" onclick="display.value += '4' ">4</button>
+                <button class="button" value="5" onclick="display.value += '5' ">5</button>
+                <button class="button" value="6"  onclick="display.value += '6' ">6</button>
+                <button class="button operator" value="-" onclick="display.value += '-' " >-</button>
+            </div>
+
+            <div>
+                <button class="button" value="1" onclick="display.value += '1' ">1</button>
+                <button class="button" value="2"  onclick="display.value += '2' ">2</button>
+                <button class="button" value="3"  onclick="display.value += '3' ">3</button>
+                <button class="button operator" value="+" onclick="display.value += '+' ">+</button>
+            </div>
+
+            <div>
+                <button class="button" value="00" onclick="display.value += '00' ">00</button>
+                <button class="button" value="0"  onclick="display.value += '0' ">0</button>
+                <button class="button" value="."  onclick="display.value += '.' ">.</button>
+                <button class="button equal" value="="  onclick="display.value = eval(display.value)">=</button>
+            </div>
+        </div>
+    </div>
+<script src="calc.js">
+
+</script>
+    
+
+</body>
+</html>
